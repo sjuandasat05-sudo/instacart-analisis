@@ -4,6 +4,12 @@ AUTOR
 
 JUAN DAVID SALAZAR TORRES
 
+ANALISIS Y DESARROLLO DE SOFTWARE
+
+FICHA 3169901
+
+SENA (CTMA)
+
 DESCRIPCION
 
 Proyecto diseñado para estudiar y comprender el analisis de datos en Instacart utilizando python y librerias panda.
