@@ -1,4 +1,4 @@
-LECCION 2:LIMPIEZA Y ESTANDARIZACION
+# LECCION 2:LIMPIEZA Y ESTANDARIZACION
 
  Excepciones
 
@@ -7,7 +7,7 @@ LECCION 2:LIMPIEZA Y ESTANDARIZACION
  en la ultima parte de esta se tubieron que haber pasos adicionales.
 
 
- Laboratorio guiado 2: pipeline de limpieza con informe de cambios
+# Laboratorio guiado 2: pipeline de limpieza con informe de cambios
 
  PASO 1:RECARGAR LOS DATOS CRUDOS
 
@@ -32,6 +32,34 @@ Esta diferencia se debe a que, durante el proceso de limpieza, Pandas puede cons
 Se decidió conservar los índices actuales, ya que no representan un error en los datos ni afectan la integridad de los registros. No se consideró necesario utilizar `reset_index()` porque el ejercicio no exige renumerar las filas.
 
 Por lo tanto, el resultado `False` de `equals()` no significa necesariamente que la limpieza sea incorrecta, sino que los DataFrames presentan diferencias en sus índices.
+
+# LECCION 3:FILTRADO,ORDENAMIENTO Y AGRUPACION DE DATOS
+
+FILTRADO CON MASCARAS BOOLEANAS
+
+Se creó una condición para comprobar qué registros de la columna order_number tienen el valor 1.
+
+es_primer_pedido = orders['order_number'] == 1
+print(es_primer_pedido.head(3))
+
+primeros = orders[es_primer_pedido]
+print(len(primeros))
+
+RESULTADO OBETENIDO
+
+La comparación genera valores booleanos (True y False).
+
+Se filtraron los registros que cumplen la condición order_number == 1.
+
+Se obtuvieron 28.819 registros.
+
+Observacion
+
+El material de estudio presenta 28.817 registros. Sin embargo, mi dataset contiene 28.819. Se verificó esta diferencia mediante value_counts() y se confirmó que existen 28.819 registros con order_number == 1.
+
+CONCLUSION
+
+Las máscaras booleanas permiten filtrar un DataFrame mediante condiciones lógicas, conservando únicamente los registros que cumplen los criterios establecidos.
 
 
 
