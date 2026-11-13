@@ -62,6 +62,12 @@ CONCLUSION
 Las máscaras booleanas permiten filtrar un DataFrame mediante condiciones lógicas, conservando únicamente los registros que cumplen los criterios establecidos.
 
 
+# Lección 4: Combinación y estructuración de múltiples datasets
+
+
+
+
+
 
 
 
